@@ -46,12 +46,15 @@ p {
 }
 
 /* АКТИВНОЕ СОСТОЯНИЕ КНОПОК И ССЫЛОК */
-.btn:hover,
-.btn:focus {
+.filter-btn:hover,
+.filter-btn:focus {
   color: #ffffff;
   background-color: var(--accent-color);
 }
-
+.hero-btn:hover,
+.hero-btn:focus {
+  background-color: #188ce8;;
+}
 .footer-contact-location:hover,
 .footer-contact-location:focus,
 .link:hover,
@@ -124,8 +127,6 @@ p {
 
 /* КНОПКИ  */
 .btn {
-  color: var(--secondary-text-color);
-  background-color: #f5f4fa;
   font-family: inherit;
   cursor: pointer;
   border: none;
@@ -158,6 +159,9 @@ p {
 .hero-btn {
   margin-top: 30px;
   padding: 10px 32px;
+  
+  color: #ffffff;
+  background-color: var(--accent-color);
 
   font-weight: 700;
   font-size: 16px;
@@ -181,7 +185,7 @@ p {
   display: flex;
 }
 .feature-item {
-  flex-basis: calc(100% / 4 - var(--section-item-gap));
+  flex-basis: calc((100% - 3 * var(--section-item-gap)) / 4);
 }
 .feature-item + .feature-item {
   margin-left: var(--section-item-gap);
@@ -279,7 +283,7 @@ p {
   line-height: 1.71;
   letter-spacing: 0.03em;
 }
-.location {
+.footer-contact-location {
   color: #ffffff;
 }
 
@@ -295,6 +299,9 @@ p {
 }
 .filter-btn {
   padding: 6px 22px;
+
+  color: var(--secondary-text-color);
+  background-color: #f5f4fa;
 
   font-weight: 500;
   font-size: 16px;
